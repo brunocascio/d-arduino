@@ -1,0 +1,18 @@
+<ion-view view-title="Acciones">
+  <ion-content>
+    <ion-list class="disable-user-behavior">
+    	<div class="list">
+		    <div class="item item-toggle">
+		        Dar de comer
+			    <label class="toggle toggle-medium disable-user-behavior"
+			    		ng-class="{true:'toggle-assertive', false:'toggle-balanced'}[operations.feed.failed]">
+			    	<input type="checkbox" ng-model="settings.food" ng-change="feed()">
+			    	<div class="track">
+			    		<div class="handle"></div>
+			    	</div>
+			    </label>
+		    </div>
+    	</div>
+    </ion-list>
+  </ion-content>
+</ion-view>
